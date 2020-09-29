@@ -1,7 +1,10 @@
-article .checkbox, .md .checkbox
+.md .checkbox
   display: flex
-  font-size: $fontsize-body
   align-items: center
+  margin-top: $gap-p
+  margin-bottom: $gap-p
+  &+.checkbox
+    margin-top: 0 - $gap-p
   input
     transform: translate(0, -1px)
     -webkit-appearance: none

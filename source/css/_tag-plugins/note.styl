@@ -5,12 +5,12 @@ div.note
   border($c)
     return mix($c, $color-card, 100)
   position: relative
-  margin-top: $gap-row
-  margin-bottom: $gap-row
+  margin-top: $gap-p
+  margin-bottom: $gap-p
   padding: $gap
   padding-left: "calc(16px + %s)" % $gap
   border-radius: $border-codeblock
-
+  font-size: $fontsize-list
   h2,
   h3,
   h4,
@@ -30,10 +30,10 @@ div.note
   ol,
   blockquote,
   img
-    font-size: $fontsize-body
-    margin-top: $gap-row
-    margin-bottom: $gap-row
-
+    margin-top: $gap-p * 0.5
+    margin-bottom: $gap-p * 0.5
+  .link-card
+    background: var(--color-card)
   &::before
     position: absolute
     top: "calc(50% - %s * 0.5)" % (24px)
